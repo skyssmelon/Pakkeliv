@@ -1,0 +1,22 @@
+{
+  "name": "pakkeliv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pakkeliv – en netthandelsimulator for Android",
+  "scripts": {
+    "serve": "npx http-server www -p 8080 -c-1",
+    "android:init": "npx cap add android && npx @capacitor/assets generate --android && npx cap sync android",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/status-bar": "^8.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0"
+  }
+}
