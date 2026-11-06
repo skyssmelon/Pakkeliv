@@ -20,9 +20,7 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
-
-      - name: Installer avhengigheter
+         - name: Installer avhengigheter
         run: npm install
 
       - name: Opprett Android-prosjekt
